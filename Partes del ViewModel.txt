@@ -1,0 +1,37 @@
+<Picker x:Name="BodegaPicker"
+                                Title="Selecciona una bodega"
+                                SelectedItem="{Binding SelectedBodega, Mode=TwoWay}"
+                                SelectedIndexChanged="OnPickerSelectedIndexChanged"
+                                HorizontalOptions="FillAndExpand">
+                            <Picker.ItemsSource>
+                                <Binding Path="Bodegas" />
+                            </Picker.ItemsSource>
+                            <Picker.ItemDisplayBinding>
+                                <Binding Path="CodigoBodega" />
+                            </Picker.ItemDisplayBinding>
+                        </Picker>
+
+***********************************************************************************************
+
+/*if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    //var datos = JsonConvert.DeserializeObject<List<Pocso>>(content.Trim());
+                    var respuestaCofres = JsonConvert.DeserializeObject<RespuestaCofres>(content.Trim());
+                    // Guarda la colección original para poder filtrarla después
+                    _datosOriginales = new ObservableCollection<Pocso>(respuestaCofres.respuesta);
+                    TusDatos = new ObservableCollection<Pocso>(_datosOriginales);
+                }
+                else
+                {
+                    Console.WriteLine(response.ToString());
+                }*/
+
+*****************************************************************************************************
+/*if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    var respuestaAPI = JsonConvert.DeserializeObject<RespuestaAPI>(content);
+
+                    Bodegas = new ObservableCollection<Bodega>(respuestaAPI.detalle);
+                }*/

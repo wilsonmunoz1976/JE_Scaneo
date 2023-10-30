@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QR_App.ContinuePage"
+             Title="ContinuePage">
+    <StackLayout>
+        <Label Text="Nombre:"/>
+        <Entry x:Name="entryName" TextChanged="OnTextChanged"/>
+        <Button x:Name="btnSend" Clicked="OnSendClicked" Text="Enviar" IsEnabled="False"/>
+    </StackLayout>
+</ContentPage>

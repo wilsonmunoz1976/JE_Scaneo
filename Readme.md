@@ -1,0 +1,1 @@
+Aplicación Movil de control de flujo de Cofres/Urnas en Funeraria, con opciones adicionales de Toma Fisica para Inventario
